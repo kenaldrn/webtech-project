@@ -1,7 +1,13 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   padding: 20px;
-  background-color: #f0f8ff;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, section {
+  margin-bottom: 40px;
 }
 
 h1, h2 {
@@ -12,15 +18,32 @@ h1, h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
   background-color: #0066cc;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #004d99;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.screenshots img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
